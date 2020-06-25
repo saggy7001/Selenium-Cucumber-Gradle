@@ -12,7 +12,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/java/features"
         ,glue={"stepDef"}
-        ,tags="@regression, @smoke"
+        ,tags="@regression or @smoke"
         //,tags="@smoke"
         ,format = {"pretty", "html:build/cucumber-html-report"}
 )

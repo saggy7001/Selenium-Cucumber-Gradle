@@ -14,7 +14,7 @@ task cucumber(){
         javaexec {
             main = "cucumber.api.cli.Main"
             classpath = configurations.cucumberRuntime + sourceSets.main.output + sourceSets.test.output
-            args = ['--plugin', "html:build/reports/tests/cucumber-html-report", '--glue', 'stepDef', 'src/test/java', '--tags','@smoke']
+            args = ['--plugin', "html:build/reports/tests/cucumber-html-report", '--glue', 'stepDef', 'src/test/java', '--tags','@regression or @smoke']
         }
     }
 }
